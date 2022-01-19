@@ -133,27 +133,8 @@
     <section class="home-section">
         <div class="home-content">
             <i class='bx bx-menu'></i>
-            <span class="text"></span>
         </div>
     </section>
-     <script>
-
-     let arrow = document.querySelectorAll(".arrow");
-     console.log(arrow);
-     for (let i = 0; i < arrow.length; i++) {
-         arrow[i].addEventListener("click", (e)=>{
-        let arrowParent = e.target.parentElement.parentElement;
-        arrowParent.classList.toggle("showMenu");
-        });
-    }
-
-    let sidebar = document.querySelector(".sidebar");
-    let sidebarBtn = document.querySelector(".bx-menu");
-    console.log(sidebarBtn);
-    sidebarBtn.addEventListener("click", ()=>{
-        sidebar.classList.toggle("close");
-    });
-
-     </script>
+     <script src="index.js"></script>
 </body>
 </html>
